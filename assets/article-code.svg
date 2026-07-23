@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 300" role="img" aria-label="code screen">
+  <rect width="520" height="300" fill="#08121d"/>
+  <path d="M0 0h520v300H0z" fill="#071520"/>
+  <g font-family="Consolas, monospace" font-size="28" font-weight="700">
+    <text x="36" y="58" fill="#27d7ff">$info = mysql_fetch()</text>
+    <text x="36" y="104" fill="#69ff9d">return $info;</text>
+    <text x="36" y="150" fill="#27d7ff">if(mysql::count()) {</text>
+    <text x="72" y="196" fill="#ff65ae">static function set()</text>
+    <text x="36" y="242" fill="#69ff9d">false; }</text>
+  </g>
+  <path d="M340 90c58 0 96 38 96 84s-38 84-96 84c-46 0-82-24-94-62l-56 12 46-40c3-45 42-78 104-78Z" fill="none" stroke="#8cefff" stroke-width="6"/>
+  <path d="M287 173c25-28 56-35 93-20" fill="none" stroke="#8cefff" stroke-width="5" stroke-linecap="round"/>
+</svg>

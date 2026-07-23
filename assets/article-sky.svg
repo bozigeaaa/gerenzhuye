@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 300" role="img" aria-label="sky and sea">
+  <rect width="520" height="300" fill="#b9e5ff"/>
+  <path d="M0 182c86-18 178-12 260 0s174 18 260-4v122H0Z" fill="#4d99dc"/>
+  <path d="M0 208c98-16 183-10 260 2 82 13 163 15 260-6v96H0Z" fill="#206aa6"/>
+  <path d="M42 62c42-22 98-16 134 7 58-32 124-20 168 18 50-25 102-19 143 13H42Z" fill="#fff" opacity=".9"/>
+  <path d="M320 55c36-14 78-7 108 18" stroke="#fff" stroke-width="12" stroke-linecap="round" opacity=".9"/>
+  <path d="M25 235h450M90 257h360M0 278h520" stroke="#fff" stroke-width="4" opacity=".42"/>
+</svg>

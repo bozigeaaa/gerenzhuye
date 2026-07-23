@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 480" role="img" aria-label="美食占位图">
+  <rect width="640" height="480" fill="#fff8cf"/>
+  <path d="M0 80h640M0 160h640M0 240h640M0 320h640M0 400h640M80 0v480M160 0v480M240 0v480M320 0v480M400 0v480M480 0v480M560 0v480" stroke="#060606" stroke-opacity=".08" stroke-width="4"/>
+  <rect x="142" y="118" width="356" height="244" rx="34" fill="#fff" stroke="#060606" stroke-width="10"/>
+  <circle cx="320" cy="240" r="86" fill="#f46bad" stroke="#060606" stroke-width="10"/>
+  <path d="M270 236c28 28 72 28 100 0" fill="none" stroke="#060606" stroke-width="12" stroke-linecap="round"/>
+  <circle cx="290" cy="214" r="10" fill="#060606"/>
+  <circle cx="350" cy="214" r="10" fill="#060606"/>
+  <path d="M176 164h288" stroke="#48d87f" stroke-width="18" stroke-linecap="round"/>
+  <path d="M196 332h248" stroke="#3d8cff" stroke-width="18" stroke-linecap="round"/>
+</svg>

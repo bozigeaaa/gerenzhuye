@@ -1,0 +1,468 @@
+﻿<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>许佳杰 | 个人网站</title>
+    <meta
+      name="description"
+      content="许佳杰的个人网站，包含个人简历、关于我和随机美食小功能。"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <header class="topbar" aria-label="主导航">
+      <nav class="tab-nav" aria-label="网站栏目">
+        <button class="tab-button is-active" type="button" data-tab="home">我的简历</button>
+        <button class="tab-button" type="button" data-tab="about">关于我</button>
+        <button class="tab-button" type="button" data-tab="tools">今天吃什么？</button>
+        <button class="tab-button" type="button" data-tab="shenzhen-food">深圳美食店铺</button>
+        <button class="mail-link" type="button" data-contact-open aria-label="打开联系方式">联系我</button>
+      </nav>
+    </header>
+
+    <main>
+      <section class="tab-panel is-active" id="home" aria-labelledby="home-title">
+        <div class="hero-grid shell">
+          <div class="hero-copy">
+            <p class="mini-label">HELLO, WELCOME TO MY SPACE</p>
+            <h1 id="home-title">
+              我是
+              <span class="marker marker-pink tilt-left">许佳杰</span>
+              <br />
+              在地球开服
+              <span class="marker marker-blue tilt-right">25年</span>
+              <br />
+              <span class="marker marker-green tilt-left">ENFP</span>
+            </h1>
+            <p class="lead">
+              Digital Writer | Product Explorer | Vibe Coder by night.
+              白天把混乱的问题整理清楚，晚上把灵感做成能运行的小东西。
+            </p>
+            <button class="comic-button" type="button" data-tab-target="about">
+              <span class="button-icon">i</span>
+              More about me
+            </button>
+          </div>
+
+          <div class="avatar-stack">
+            <figure class="avatar-frame">
+              <img src="./assets/profile-photo.jpg" alt="许佳杰的个人照片" />
+            </figure>
+            <section class="resume-profile-card" aria-label="求职基本信息">
+              <dl>
+                <div>
+                  <dt>出生</dt>
+                  <dd>2001.3.8</dd>
+                </div>
+                <div>
+                  <dt>学历</dt>
+                  <dd>大专</dd>
+                </div>
+                <div>
+                  <dt>求职</dt>
+                  <dd>商务BD / 短视频拍摄剪辑</dd>
+                </div>
+                <div>
+                  <dt>薪资范围</dt>
+                  <dd>8-12k</dd>
+                </div>
+              </dl>
+              <a class="comic-button resume-download" href="./assets/resume-xujiajie.pdf" download="许佳杰-简历.pdf">
+                <span class="button-icon">↓</span>
+                下载 PDF 简历
+              </a>
+            </section>
+          </div>
+        </div>
+
+        <div class="shell page-heading resume-heading">
+          <h2>
+            地球Online
+            <span class="marker marker-pink tilt-right">个人主线进度</span>
+          </h2>
+        </div>
+
+        <section class="resume-board shell" aria-label="简历时间线">
+          <div class="board-title main-task">主线任务</div>
+          <p class="task-tip">点击下方卡片查看详情</p>
+
+          <button class="quest quest-left blue-shadow" type="button" data-quest-open="venture">
+            <span class="tile-icon blue">🚀</span>
+            <div>
+              <strong><small>[主线]</small> 2024.05-2026.3</strong>
+              <p>创业：移民 &amp; 美区TK &amp; 抖音</p>
+            </div>
+          </button>
+          <button class="quest quest-left pink-shadow" type="button" data-quest-open="qianyudao">
+            <span class="tile-icon pink">▥</span>
+            <div>
+              <strong><small>[主线]</small> 2023.12-2024.04</strong>
+              <p>深圳市乾有道文旅数字投资有限公司　抖音商务BD</p>
+            </div>
+          </button>
+          <button class="quest quest-left green-shadow" type="button" data-quest-open="lisen">
+            <span class="tile-icon green">⌂</span>
+            <div>
+              <strong><small>[主线]</small> 2022-08 ~ 2023-12</strong>
+              <p>深圳市李森科技有限公司　抖音商务BD</p>
+            </div>
+          </button>
+          <button class="quest quest-left yellow-shadow" type="button" data-quest-open="college">
+            <span class="tile-icon yellow">↝</span>
+            <div>
+              <strong><small>[主线]</small> 2022.06</strong>
+              <p>大专毕业于 广东岭南职业技术学院 计算机专业</p>
+            </div>
+          </button>
+
+          <div class="board-title side-task-title">支线任务</div>
+
+          <button class="quest quest-left side-quest pink-shadow" type="button" data-external-url="https://v.douyin.com/w58DL4WoM24">
+            <span class="tile-icon pink">✦</span>
+            <div>
+              <strong><small>[支线]</small> 短视频带货</strong>
+              <p>自运营抖音数码账号，对接品牌方，根据BF要求拍剪并视频，样品置换or稿费置换视频。</p>
+            </div>
+          </button>
+          <button class="quest quest-left side-quest quest-static blue-shadow" type="button">
+            <span class="tile-icon blue">☁</span>
+            <div>
+              <strong><small>[支线]</small> 学习AI工具</strong>
+              <p>学习codex、chatgpt、Claude等AI工具，学习并测试各种skill。争取做出属于自己的AI工具，为自己赋能。</p>
+            </div>
+          </button>
+          <button class="quest quest-left side-quest quest-static green-shadow" type="button">
+            <span class="tile-icon green">⌘</span>
+            <div>
+              <strong><small>[支线]</small> 个人网站</strong>
+              <p>搭建一个可以持续更新经历、作品和联系方式的小站。</p>
+            </div>
+          </button>
+        </section>
+
+      </section>
+
+      <section class="tab-panel" id="about" aria-labelledby="about-title">
+        <div class="about-grid shell">
+          <div>
+            <h1 id="about-title">
+              Welcome to
+              <span class="marker marker-blue tilt-left">我的世界！</span>
+            </h1>
+            <div class="about-text">
+              <p>
+                我是一个喜欢把复杂问题拆开的人，也喜欢自己有执行力，喜欢刨根问底，想了解一个东西就会研究透彻，是一个想到什么觉得有趣有意思就会去立马实施的人。
+              </p>
+              <p>
+                这个网站是我第一个用 AI 和自己的想法完全自主实现的网站。
+              </p>
+            </div>
+          </div>
+
+          <aside class="id-card" aria-label="个人信息卡">
+            <div class="id-head">
+              <span>ID CARD</span>
+              <span>☺</span>
+            </div>
+            <div class="id-body">
+              <img src="./assets/profile-photo.jpg" alt="许佳杰的个人照片" />
+              <dl>
+                <dt>NAME</dt>
+                <dd>许佳杰</dd>
+                <dt>MAJOR</dt>
+                <dd>商务BD / 摄影剪辑</dd>
+              </dl>
+            </div>
+            <div class="barcode" aria-hidden="true"></div>
+          </aside>
+        </div>
+
+        <div class="statement shell">
+          <span>STATEMENT</span>
+          <p>人是无数别人拼凑的自己，所有曾经与你深度交流过的人，都在你身上留下了一部分的自己。</p>
+        </div>
+
+        <section class="feature-section shell" aria-labelledby="about-advantages-title">
+          <h2 class="stamp-title" id="about-advantages-title">个人优势</h2>
+          <div class="keyword-grid">
+            <article>
+              <strong>影像工具</strong>
+              <p>熟悉手机摄像和佳能相机摄影，精通剪映、LR、PS 工具。</p>
+            </article>
+            <article>
+              <strong>内容制作</strong>
+              <p>具备短视频和照片拍摄、剪辑、调色能力，能独立完成短视频从拍摄到交付。</p>
+            </article>
+            <article>
+              <strong>达人资源</strong>
+              <p>有近千名 3C 数码达人资源，短视频较多，能独立跟进达人的商务合作闭环。</p>
+            </article>
+          </div>
+        </section>
+
+        <section class="feature-section shell" aria-labelledby="about-values-title">
+          <h2 class="stamp-title" id="about-values-title">我的关键词</h2>
+          <div class="keyword-grid">
+            <article>
+              <strong>好奇</strong>
+              <p>总想弄明白事情为什么会这样，以及有没有更好玩的做法。</p>
+            </article>
+            <article>
+              <strong>行动</strong>
+              <p>比起反复等待完美答案，我更喜欢先做一个可验证版本。</p>
+            </article>
+            <article>
+              <strong>表达</strong>
+              <p>相信清晰的表达本身就是一种产品能力，也是一种温柔。</p>
+            </article>
+          </div>
+        </section>
+
+      </section>
+
+      <section class="tab-panel" id="tools" aria-labelledby="tools-title">
+        <div class="tools-head shell">
+          <div>
+            <p class="mini-label">TINY TOOLBOX</p>
+            <h1 id="tools-title">
+              今天
+              <span class="marker marker-yellow tilt-left">吃什么？</span>
+            </h1>
+            <p class="lead">
+              随便帮你选一家吃的
+              <br />
+              你去炫吧
+            </p>
+          </div>
+          <div class="tools-info-grid">
+            <div class="food-status-card">
+              <span>STATUS</span>
+              <strong>高德地图已配置</strong>
+              <ol class="status-note-list">
+                <li>商家与距离来自高德地图。</li>
+                <li>点击卡片会只用店名跳转到大众点评搜索页。</li>
+                <li>定位按钮会打开高德地图导航。</li>
+              </ol>
+            </div>
+            <section class="feedback-card" aria-label="优化反馈">
+              <strong>优化反馈</strong>
+              <p>有想法？点这里写反馈。</p>
+              <a class="feedback-link-button" href="https://docs.qq.com/smartsheet/form/LUlpBnpAPGbc%2FtCTK6c%2FvuwKFj?tab=tCTK6c" target="_blank" rel="noreferrer">
+                填写反馈
+              </a>
+            </section>
+          </div>
+        </div>
+
+        <section class="food-tool shell" aria-label="随机美食小功能">
+          <div class="food-control-panel">
+            <label class="food-search-box">
+              <span>地点</span>
+              <div class="place-input-row">
+                <input type="search" data-food-place placeholder="输入你想搜索的位置，例如：深圳南山区" />
+                <button class="locate-button locate-search-button" type="button" data-food-resolve hidden>搜索定位</button>
+                <button class="locate-button" type="button" data-food-locate>实时定位</button>
+              </div>
+              <div class="place-suggestion-panel" data-place-suggestions hidden></div>
+            </label>
+
+            <div class="food-middle-row">
+              <div class="food-filter-stack">
+                <div class="filter-group" aria-label="美食分类筛选">
+                  <span>分类</span>
+                  <div class="segmented-control" data-food-category>
+                    <button class="is-selected" type="button" data-value="all">全部</button>
+                    <button type="button" data-value="meal">正餐</button>
+                    <button type="button" data-value="drink">奶茶咖啡</button>
+                  </div>
+                </div>
+
+                <div class="filter-group" aria-label="距离筛选">
+                  <span>距离</span>
+                  <div class="segmented-control distance-control" data-food-distance>
+                    <button class="is-selected" type="button" data-value="nearby">附近</button>
+                    <button type="button" data-value="500">500米</button>
+                    <button type="button" data-value="1000">1km</button>
+                    <button type="button" data-value="2000">2km</button>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+
+            <div class="food-actions">
+              <button class="comic-button food-search-button" type="button" data-food-search>
+                <span class="button-icon">⌕</span>
+                <span data-food-search-label>搜索附近美食</span>
+              </button>
+              <button class="comic-button food-random-button" type="button" data-food-random disabled>
+                <span class="button-icon">?</span>
+                随机挑选吃什么
+              </button>
+            </div>
+          </div>
+
+          <div class="food-results-head">
+            <h2 class="stamp-title">附近美食</h2>
+            <p data-food-count>还没有搜索结果</p>
+          </div>
+          <div class="food-card-grid" data-food-results>
+            <article class="food-empty-card">
+              <strong>先输入地点</strong>
+              <p>默认不自动搜索。输入地点后，就能按当前分类和距离展示真实周边美食。</p>
+            </article>
+          </div>
+        </section>
+      </section>
+
+      <section class="tab-panel" id="shenzhen-food" aria-labelledby="shenzhen-food-title">
+        <section class="sheet-food-tool shell" aria-label="深圳美食表格推荐">
+          <div class="sheet-food-head">
+            <div>
+              <p class="mini-label">SHENZHEN LIST</p>
+              <h1 class="stamp-title" id="shenzhen-food-title">已攻略店铺推荐</h1>
+              <ol class="sheet-source-note">
+                <li>已攻略店铺是基于深圳美食群群友写的共享文档提供的内容。</li>
+                <li>如果想新增已攻略店铺，可以照常写在群公告的表格中，不定时更新内容到网页中。</li>
+              </ol>
+            </div>
+            <button class="comic-button sheet-random-button" type="button" data-sheet-random>
+              点我，可以从已攻略中的店铺里随机抽取吃什么
+            </button>
+          </div>
+
+          <div class="sheet-food-panel">
+            <div class="sheet-filter-row" aria-label="深圳区域筛选" data-sheet-districts></div>
+            <p class="sheet-food-count" data-sheet-count></p>
+            <div class="sheet-food-grid" data-sheet-results></div>
+          </div>
+        </section>
+      </section>
+    </main>
+
+    <div class="contact-overlay" data-contact-overlay hidden>
+      <section class="contact-pop-card" aria-label="联系方式卡片">
+        <button class="modal-close-button" type="button" data-overlay-close aria-label="关闭">×</button>
+        <span class="contact-badge">CONTACT</span>
+        <h2>怎么联系我</h2>
+        <dl>
+          <div>
+            <dt>微信号</dt>
+            <dd>bozigeaaa</dd>
+            <button class="copy-mini-button" type="button" data-copy-value="bozigeaaa">复制</button>
+          </div>
+          <div>
+            <dt>邮箱号</dt>
+            <dd>2522129240@qq.com</dd>
+            <button class="copy-mini-button" type="button" data-copy-value="2522129240@qq.com">复制</button>
+          </div>
+        </dl>
+        <p>点击任意位置关闭</p>
+      </section>
+    </div>
+
+    <div class="quest-overlay" data-quest-overlay hidden>
+      <section class="quest-pop-card" aria-label="任务经历详情">
+        <button class="modal-close-button" type="button" data-overlay-close aria-label="关闭">×</button>
+        <span class="contact-badge">DETAIL</span>
+        <h2>任务经历</h2>
+        <h3 data-quest-title></h3>
+        <div class="quest-detail-body" data-quest-body></div>
+        <p>点击卡片外任意位置关闭</p>
+      </section>
+    </div>
+
+    <div class="food-overlay" data-food-overlay hidden>
+      <section class="food-pop-card" aria-label="随机美食结果">
+        <button class="modal-close-button" type="button" data-overlay-close aria-label="关闭">×</button>
+        <span class="contact-badge">PICKED</span>
+        <h2>今天就吃这个</h2>
+        <div data-food-picked></div>
+        <button class="comic-button food-again-button" type="button" data-food-random-again>
+          <span class="button-icon">↻</span>
+          继续随机
+        </button>
+        <p>点击卡片外任意位置关闭</p>
+      </section>
+    </div>
+
+    <div class="food-overlay" data-sheet-overlay hidden>
+      <section class="food-pop-card sheet-pop-card" aria-label="随机表格美食结果">
+        <button class="modal-close-button" type="button" data-overlay-close aria-label="关闭">×</button>
+        <span class="contact-badge">SHEET PICK</span>
+        <h2>表格推荐这一家</h2>
+        <div data-sheet-picked></div>
+        <button class="comic-button food-again-button" type="button" data-sheet-random-again>
+          <span class="button-icon">↻</span>
+          继续随机
+        </button>
+        <p>点击卡片外任意位置关闭</p>
+      </section>
+    </div>
+
+    <div class="floating-food-actions" data-food-float hidden>
+      <button class="floating-food-button" type="button" data-food-floating-random disabled>随机选择</button>
+      <button class="floating-food-button" type="button" data-food-back-top>返回顶部</button>
+    </div>
+
+    <template id="quest-template-venture">
+      <section>
+        <h4>1. 国内抖音直播板块</h4>
+        <p><strong>全案运营：</strong>起店到成交，从0到1。独立负责账号定位、短视频引流拍摄剪辑、直播销售、直播间搭建及话术设计，参与大促活动策略等。</p>
+        <p><strong>投流与数据：</strong>精通千川及随心推投放策略，通过数据分析优化人群包，提升转化率。</p>
+        <p><strong>业绩成果：</strong>直播销售额月平均 35 万，净利润1.5万左右，跑通全流程闭环。</p>
+      </section>
+      <section>
+        <h4>2. 海外移民与小红书板块</h4>
+        <p><strong>获客渠道：</strong>针对高净值人群制定移民相关内容策略，通过小红书推文、视频剪辑及评论区精准截流，将公域线索高效导入私域。</p>
+        <p><strong>销售转化：</strong>负责移民产品的咨询服务与销售，维护客群。</p>
+        <p><strong>业绩成果：</strong>累计流水接近 200 万，净利润 55 万左右。</p>
+      </section>
+      <section>
+        <h4>3. 美国TikTok跨境电商</h4>
+        <p><strong>全案运营：</strong>独立完成海外设备环境搭建、国际物流对接及本土化市场调研、店铺运营、上架销售等。</p>
+        <p><strong>内容与销售：</strong>负责产品定位、短视频与二创素材制作、达人BD及投流。</p>
+        <p><strong>业绩成果：</strong>成功跑通“短视频带货 + 达人分销 + 商品卡”闭环，单月最高产出近3万，净利润1万。</p>
+      </section>
+    </template>
+
+    <template id="quest-template-qianyudao">
+      <section>
+        <p><strong>商务拓展：</strong>负责针对抖音平台本地生活类目，全国重点景区酒店旅游等直播达人 + 短视频宣发达人建联，积累丰富各地达人群体。</p>
+        <p><strong>商务对接：</strong>应直播及短视频宣发要求，筛选符合的达人带货数据、地区、粉丝群体、带货等级等，达成合作。</p>
+        <p><strong>结果跟踪：</strong>对批量达人高效沟通，提供 brief，提供视频图片素材、话术、带货重点、流量扶持激励等等，对直播进度、短视频制作进度负责，对结果负责。</p>
+      </section>
+      <section>
+        <h4>工作成果</h4>
+        <p>对本地生活各后台熟悉，了解本地生活类目达人接单习惯，可有针对性的切入手段，较好的客情维护。</p>
+        <p>根据商户需求指定合理的推广方案、达人方激励方案，提供促销活动、运营、投流支持。</p>
+        <p>任职期间单酒店产品直播 GMV 最高产出 130W，短视频 GMV 产出 30W。</p>
+      </section>
+    </template>
+
+    <template id="quest-template-lisen">
+      <section>
+        <p><strong>商务拓展：</strong>抖音平台的达人资源拓展，联系达人商务直播达人 + 短视频达人，积累并维护达人资源。</p>
+        <p><strong>商务对接：</strong>对达人账号评估、筛选适合合作的达人账号，洽谈合作产品、签署合作合同、达成合作。</p>
+        <p><strong>内容跟进：</strong>制作货盘，针对不同主播风格和粉丝匹配度，制定相应货品推广、邮寄样品、直播手卡制作，对直播进度、短视频制作进度负责。</p>
+        <p><strong>结果跟踪：</strong>针对带货板块达人直播以及视频发放后的数据跟踪，对转化产出较好的达人创建再次合作机会，对转化产出较少的达人提供修改建议。品宣达人的视频回收，审核视频 + 文案内容符合产品卖点的宣传要素，对后续视频宣发评论区舆情维护。</p>
+      </section>
+      <section>
+        <h4>工作成果</h4>
+        <p>熟悉与达人全流程系统，商务对接话术与客情维护。</p>
+        <p>积累了3C类目垂直达人资源、MCN机构资源，与达人商务建立良好沟通关系长期合作关系。</p>
+        <p>掌握抖店后台链接制作编辑，千川、抖店随心推投放标准。</p>
+        <p>在任职期间 GMV 平均月产出 50W 左右。</p>
+      </section>
+    </template>
+
+    <template id="quest-template-college">
+      <section>
+        <p><strong>学历经历：</strong>大专毕业于 广东岭南职业技术学院 计算机专业。</p>
+      </section>
+    </template>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
