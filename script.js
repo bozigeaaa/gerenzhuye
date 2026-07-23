@@ -65,7 +65,36 @@ const foodState = {
 const sheetFoodState = {
   district: "全部",
 };
-const sheetFoodData = [
+const shenzhenFoodDataUrl = "./assets/shenzhen-food-data.json";
+
+async function loadSheetFoodData() {
+  if (!sheetResults) return;
+
+  try {
+    const response = await fetch(`${shenzhenFoodDataUrl}?t=${Date.now()}`, {
+      cache: "no-store",
+    });
+
+    if (!response.ok) {
+      throw new Error(`data request failed: ${response.status}`);
+    }
+
+    const data = await response.json();
+    if (Array.isArray(data.food)) {
+      sheetFoodData = data.food;
+    }
+    if (Array.isArray(data.avoid)) {
+      sheetAvoidData = data.avoid;
+    }
+  } catch (error) {
+    console.warn("Use embedded Shenzhen food data because live JSON failed.", error);
+  }
+
+  renderSheetDistricts();
+  renderSheetFoodLibrary();
+}
+
+let sheetFoodData = [
     {
         "district":  "宝安",
         "name":  "手摇糯米糍",
@@ -4081,7 +4110,7 @@ const sheetFoodData = [
         "note":  "泡汤，环境很好，适合年轻人去"
     }
 ];
-const sheetAvoidData = [
+let sheetAvoidData = [
     {
         "district":  "避雷",
         "name":  "宽窄宅院火锅",
@@ -5528,3 +5557,4 @@ updateFoodSearchButtonLabel();
 updateFoodFloat();
 renderSheetDistricts();
 renderSheetFoodLibrary();
+loadSheetFoodData();
